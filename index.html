@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto 11 - Consentimiento de cookies</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Página de ejemplo (simula un sitio web) -->
+  <header class="encabezado">
+    <span class="logo">MiSitio</span>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Servicios</a>
+      <a href="#">Contacto</a>
+    </nav>
+  </header>
+
+  <main class="contenido">
+    <section class="hero">
+      <h1>Bienvenidos a mi sitio</h1>
+      <p>Esta página es un ejemplo que muestra cómo funciona un banner de cookies.</p>
+    </section>
+
+    <section class="columnas">
+      <article>
+        <h2>Sobre nosotros</h2>
+        <p>Texto de ejemplo para llenar la página y ver el banner encima.</p>
+      </article>
+      <article>
+        <h2>Servicios</h2>
+        <p>Más texto de ejemplo para simular el contenido de un sitio real.</p>
+      </article>
+    </section>
+  </main>
+
+  <!-- Banner de cookies -->
+  <div id="banner-cookies" class="banner" role="dialog" aria-label="Aviso de cookies">
+    <button id="btn-cerrar" class="cerrar" aria-label="Cerrar aviso">&times;</button>
+    <div class="icono">🍪</div>
+    <p class="mensaje">Usamos cookies para mejorar tu experiencia de usuario.</p>
+    <button id="btn-aceptar" class="aceptar">Aceptar cookies</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+  color: #111111;
+  line-height: 1.5;
+}
+
+/* ----- Página de ejemplo ----- */
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.logo {
+  font-weight: bold;
+}
+
+.encabezado nav a {
+  margin-left: 20px;
+  color: #181717;
+  text-decoration: none;
+}
+
+.contenido {
+  padding: 0 40px 40px;
+}
+
+.hero {
+  background: #f1a0a0;
+  border-radius: 20px;
+  padding: 80px 30px;
+  margin-bottom: 30px;
+}
+
+.columnas {
+  display: flex;
+  gap: 40px;
+}
+
+.columnas article {
+  flex: 1;
+}
+
+.columnas h2 {
+  margin-bottom: 10px;
+  color: #0c0c0c;
+}
+
+.columnas p {
+  color: #000000;
+}
+
+/* ----- Banner de cookies ----- */
+.banner {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 300px;
+  padding: 25px;
+  background: #000;
+  color: #fff;
+  border-radius: 20px;
+  z-index: 1000;
+}
+
+/* Clase que se agrega con JavaScript para ocultar el banner */
+.banner.oculto {
+  display: none;
+}
+
+.icono {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.mensaje {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.aceptar {
+  width: 100%;
+  padding: 12px;
+  background: #fff;
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.aceptar:hover {
+  background: #ddd;
+}
+
+.cerrar {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.aceptar:focus-visible,
+.cerrar:focus-visible {
+  outline: 3px solid #4da3ff;
+  outline-offset: 2px;
+}
+
+/* ----- Móvil ----- */
+@media (max-width: 600px) {
+  .columnas {
+    flex-direction: column;
+  }
+
+  .banner {
+    left: 15px;
+    right: 15px;
+    width: auto;
+  }
+}
